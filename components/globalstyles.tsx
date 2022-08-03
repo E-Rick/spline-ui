@@ -1,13 +1,18 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   html,
   body {
-    color: ${({ theme }) => theme.colors.primary};
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    background: #0e1129;
+    height: 100%;
+    font-family: 'Spline Sans',-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    overflow-x: hidden;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
   }
 
   a {
@@ -16,8 +21,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   * {
-    box-sizing: border-box;
+    margin: 0;
+	  /* padding: 0; */
+    /* box-sizing: border-box; */
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
