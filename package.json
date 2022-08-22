@@ -1,4 +1,5 @@
 {
+  "name": "spline-ui",
   "private": true,
   "scripts": {
     "dev": "next",

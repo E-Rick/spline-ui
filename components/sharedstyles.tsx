@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 		@media (max-width: 600px) {
 			transform: scale(0.5) translateX(-100px);
 			right: auto;
-			left: 50%;
+			left: 56%;
 			margin-left: -600px;
 		}
 		@media (max-width: 375px) {
@@ -184,6 +184,13 @@ const Social = styled.div`
 		width: 1px;
 		height: 500px;
 		background: linear-gradient(180deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+	}
+
+	a {
+		transition: 1s;
+		:hover {
+			transform: translateY(-3px);
+		}
 	}
 `;
 
