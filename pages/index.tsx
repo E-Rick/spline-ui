@@ -5,6 +5,7 @@ import Logo from '../public/images/logo.svg';
 import IconTwitter from '../public/images/icon-twitter.svg';
 import IconYouTube from '../public/images/icon-youtube.svg';
 import IconLaptop from '../public/images/icon-laptop.svg';
+import StyledLink from '../components/StyledLink';
 
 export default function Home() {
 	return (
@@ -48,8 +49,8 @@ export default function Home() {
 				</Content>
 				<Social>
 					<div />
-					<Image src={IconTwitter} alt='twitter' />
-					<Image src={IconYouTube} alt='Youtube' />
+					<StyledLink href="https://twitter.com/0xerick"><Image src={IconTwitter} alt='twitter' /></StyledLink>
+					<StyledLink href="https://www.youtube.com/watch?v=fiPDsN3lWfQ"><Image src={IconYouTube} alt='Youtube' /></StyledLink>
 				</Social>
 			</Wrapper>
 		</div>
